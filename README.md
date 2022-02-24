@@ -1,6 +1,6 @@
 # SortingVisualiser
 
-A java program that visualises different sorting methods with a GUI.
+A java program that visualises different sorting methods with a Java Swing GUI.
 
 # Bubble Sort
 In bubble sort, the cursor (pink) loops through the unsorted array, obtains the largest number and places it at the end of the unsorted array.
