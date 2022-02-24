@@ -13,3 +13,10 @@ In bubble sort, the cursor (pink) loops through the unsorted array, obtains the 
 In selection sort, the cursor (yellow) loops through the array, while a second cursor (blue) loops through the unsorted portion of the array and finds the smallest number (pink) before returning it to the end of the sorted part of the array.
 
 ![image](https://user-images.githubusercontent.com/99101410/155619167-8e6a6257-d4d1-4714-ab84-7dff0ca8db15.png)
+
+# Pancake Sort
+
+In pancake sort, the biggest element of the unsorted portion of the array is found (say at index N), and then all of the elements up to N are flipped using the flipfront function. After that the array is flipped once more, this time until the end of the unsorted array, as the largest element is now at the beginning. Thus, the largest element is at the end of the array. The unsorted array decreases in size (as we have already sorted the largest element and placed it at the end) and the function is called recursively until the array has been sorted.
+Below, the maximum element can be seen in pink, before all elements from the yellow to the pink are going to be flipped.
+
+![image](https://user-images.githubusercontent.com/99101410/155627448-275408b3-a621-4a4e-a02c-23eb173fd4cf.png)
