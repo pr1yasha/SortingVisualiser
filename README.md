@@ -4,7 +4,9 @@ A java program that visualises different sorting methods with a GUI.
 
 # Bubble Sort
 In bubble sort, the cursor (pink) loops through the unsorted array, obtains the largest number and places it at the end of the unsorted array.
-![image](https://user-images.githubusercontent.com/99101410/155617974-b8d6fefc-cbf6-4909-b24e-c4272f26b1eb.png)
+
+![image](https://user-images.githubusercontent.com/99101410/155618955-786c7ed0-9668-43ae-b976-89f6d1d5e9b7.png)
+
 
 # Selection Sort
 
