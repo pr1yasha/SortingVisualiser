@@ -20,4 +20,7 @@ In pancake sort, the biggest element of the unsorted portion of the array is fou
 
 Below, the maximum element can be seen in pink, before all elements from the yellow to the pink are going to be flipped.
 
-![image](https://user-images.githubusercontent.com/99101410/155627448-275408b3-a621-4a4e-a02c-23eb173fd4cf.png)
+![image](https://user-images.githubusercontent.com/99101410/155628254-6844f683-521b-4773-bbdc-122f29f3704e.png)
+
+
+![image](https://user-images.githubusercontent.com/99101410/155628269-9a2e386a-87cc-4cf0-b064-4e2d8ddd4082.png)
