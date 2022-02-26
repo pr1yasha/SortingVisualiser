@@ -27,5 +27,10 @@ public class BubbleSort {
         array[x] = array[y];
         array[y] = temp;
     }
+    
+    // method that resets all default parameters in algorithm
+    public void reset(){
+        this.current_index = 0;
+        this.portion_sorted = 0;
 
 }
