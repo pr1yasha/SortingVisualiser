@@ -1,9 +1,9 @@
 public class CocktailSort {
     int[] array;
     boolean cocktailForward = true;
-    static int current_index = 0;
-    static int portion_sorted = 0;
-    static int forwardPortionSorted = 0;
+    static int current_index = 0; // cursor
+    static int portion_sorted = 0; // number of elements sorted at the end
+    static int forwardPortionSorted = 0; // number of elements sorted at the start
 
     public CocktailSort(int[] array){
     this.array = array;
