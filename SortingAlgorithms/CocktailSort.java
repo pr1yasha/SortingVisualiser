@@ -14,18 +14,15 @@ public class CocktailSort {
         System.out.println(current_index);
         if (cocktailForward == true){
             if (current_index >= array.length - 1 - portion_sorted){
-                System.out.println("Yes");
                 portion_sorted++;
                 cocktailForward = false;
                 current_index = array.length - 1 - portion_sorted;
             }
             if (array[current_index] > array[current_index+1]){
-                System.out.println("No");
                 swap(array, current_index, current_index+1);
                 current_index++;
             }
             else {
-                System.out.println("Maybe");
                 current_index++;
             }
         }
