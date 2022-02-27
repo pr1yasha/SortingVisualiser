@@ -232,7 +232,6 @@ public class SortingArray extends JPanel implements ActionListener {
 
         if (e.getSource() == selection){
             selection_boolean = true;
-            System.out.println(bubble_boolean);
             Timer selectionTimer;
             selectionTimer = new Timer(1, e17 -> {
                 if (isSorted() || !selection_boolean) {
