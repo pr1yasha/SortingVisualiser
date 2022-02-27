@@ -1,36 +1,42 @@
 public class BubbleSort {
     int[] array;
-    static int current_index = 0; //cursor
-    static int portion_sorted = 0; //number of items already sorted
+    static int currIndex = 0; // index
+    static int portionSorted = 0; // portion of array that's been sorted
+    static int swaps = 0; // number of swaps made
 
     public BubbleSort(int[] array){
         this.array = array;
     }
 
-    // makes one swap at a time (if required) using bubble sort algorithm
+    // makes one swap at a time (if required) according to bubble Sort algorithm
     public void BubbleSort(int[] array) {
-        if (current_index >= array.length - 1 - portion_sorted) {
-            current_index = 0;
-            portion_sorted++;
+
+        if (currIndex >= array.length - 1 - portionSorted) {
+            currIndex = 0;
+            portionSorted++;
         }
 
-        if (array[current_index] > array[current_index + 1]) {
-            swap(array, current_index, current_index + 1);
-            current_index++;
+        if (array[currIndex] > array[currIndex + 1]) {
+            swap(array, currIndex, currIndex + 1);
+            currIndex++;
         } else {
-            current_index++;
+            currIndex++;
         }
     }
-    // swaps two elements in an array
+
+    // method that swaps two elements in array
     public void swap(int[] array, int x, int y){
+        this.swaps++;
         int temp = array[x];
         array[x] = array[y];
         array[y] = temp;
     }
-    
+
     // method that resets all default parameters in algorithm
     public void reset(){
-        this.current_index = 0;
-        this.portion_sorted = 0;
+        this.currIndex = 0;
+        this.portionSorted = 0;
+        this.swaps = 0;
+    }
 
 }
