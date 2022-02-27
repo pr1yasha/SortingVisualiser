@@ -7,12 +7,12 @@ public class Frame extends JFrame {
 
     public Frame() {
         this.setTitle("Sorting Algorithms");
-        this.getContentPane().setPreferredSize(new Dimension(1200, 700));
+        this.getContentPane().setPreferredSize(new Dimension(1400, 700));
         this.getContentPane().add(panel);
         this.pack();
         this.setVisible(true);
+        this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.add(panel);
     }
-
 }
