@@ -1,49 +1,46 @@
 public class CocktailSort {
     int[] array;
-    boolean cocktailForward = true;
-    static int current_index = 0; // cursor
-    static int portion_sorted = 0; // number of elements sorted at the end
-    static int forwardPortionSorted = 0; // number of elements sorted at the start
+    boolean cocktailForward = true; // true if the cursor is moving forwards, false if backwards
+    static int currIndex = 0; // cursor
+    static int portionSorted = 0; // portion of elements sorted at the end
+    static int forwardPortionSorted = 0; // portion of elements sorted at the start
+    static int swaps = 0;
 
     public CocktailSort(int[] array){
     this.array = array;
     }
 
-    // makes one swap at a time (if required) using the cocktail shaker algorithm
+    // sorts items one at a time (if required) according to Cocktail Shaker Sort algorithm
     public void cocktailSort(int[] array){
-        System.out.println(current_index);
-        if (cocktailForward == true){
-            if (current_index >= array.length - 1 - portion_sorted){
-                portion_sorted++;
+        // moving forward, biggest elements at the end
+        if (cocktailForward){
+            if (currIndex >= array.length - 1 - portionSorted){
+                portionSorted++;
                 cocktailForward = false;
-                current_index = array.length - 1 - portion_sorted;
+                currIndex = array.length - 1 - portionSorted;
             }
-            if (array[current_index] > array[current_index+1]){
-                swap(array, current_index, current_index+1);
-                current_index++;
+            if (array[currIndex] > array[currIndex+1]){
+                swap(array, currIndex, currIndex+1);
             }
-            else {
-                current_index++;
-            }
+            currIndex++;
         }
-        if (cocktailForward == false){
-            if (current_index <= portion_sorted) {
+        // moving backward, smallest elements at the start
+        if (!cocktailForward){
+            if (currIndex <= portionSorted) {
                 forwardPortionSorted++;
                 cocktailForward = true;
-                current_index = forwardPortionSorted;
+                currIndex = forwardPortionSorted;
             }
-            if (array[current_index] < array[current_index-1]){
-                swap(array, current_index, current_index-1);
-                current_index--;
+            if (array[currIndex] < array[currIndex-1]){
+                swap(array, currIndex, currIndex-1);
             }
-            else {
-                current_index--;
-            }
+            currIndex--;
         }
     }
 
     // method that swaps two elements in an array
     public void swap(int[] array, int x, int y){
+        swaps++;
         int temp = array[x];
         array[x] = array[y];
         array[y] = temp;
@@ -51,10 +48,11 @@ public class CocktailSort {
 
     // method that resets al default parameters
     public void reset(){
-        this.current_index = 0;
-        this.portion_sorted = 0;
-        this.forwardPortionSorted = 0;
+        currIndex = 0;
+        portionSorted = 0;
+        forwardPortionSorted = 0;
         this.cocktailForward = true;
+        swaps = 0;
     }
 
 }
