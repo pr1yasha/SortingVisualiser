@@ -1,41 +1,42 @@
 public class InsertionSort {
     int[] array;
-    static int current_index = 0;
-    static boolean insertion_reset = true;
-    static int portion_sorted = 0;
-    static int compare_element = 0;
+    static int currIndex = 0; // cursor
+    static boolean insertionReset = true; 
+    static int portionSorted = 0; // elements in array that have been sorted
+    static int compareElement = 0; // element being compared to
 
     public InsertionSort(int[] array){
         this.array = array;
     }
 
     // method that swaps two elements at a time (if required) according to insertion sort algorithm
-    public int[] InsertionSort(int[] array) {
-        if (insertion_reset == false){
-            compare_element = array[current_index];
-            portion_sorted = current_index - 1;
-            insertion_reset = true;
+    public void InsertionSort(int[] array) {
+        if (!insertionReset){
+            compareElement = array[currIndex];
+            portionSorted = currIndex - 1;
+            insertionReset = true;
         }
 
-        if (portion_sorted >= 0 && array[portion_sorted] > compare_element){
-            array[portion_sorted + 1] = array[portion_sorted];
-            portion_sorted--;
-            return array;
+        if (portionSorted >= 0 && array[portionSorted] > compareElement){
+            array[portionSorted + 1] = array[portionSorted];
+            portionSorted--;
+            return;
         }
+
         else {
-            array[portion_sorted + 1] = compare_element;
-            current_index++;
+            array[portionSorted + 1] = compareElement;
+            currIndex++;
         }
-        insertion_reset = false;
-        return array;
+
+        insertionReset = false;
     }
 
     // method that resets all default parameters in algorithm
     public void reset(){
-        this.current_index = 0;
-        this.portion_sorted = 0;
-        this.compare_element = 0;
-        this.insertion_reset = true;
+        currIndex = 0;
+        portionSorted = 0;
+        compareElement = 0;
+        insertionReset = true;
     }
 
 
