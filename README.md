@@ -12,7 +12,7 @@ In bubble sort, the cursor (pink) loops through the unsorted array, obtains the 
 
 In selection sort, the cursor (yellow) loops through the array, while a second cursor (blue) loops through the unsorted portion of the array and finds the smallest number (pink) before returning it to the end of the sorted part of the array.
 
-![image](https://user-images.githubusercontent.com/99101410/155619167-8e6a6257-d4d1-4714-ab84-7dff0ca8db15.png)
+![image](https://user-images.githubusercontent.com/99101410/155901364-a92eb6f8-cce3-4941-bdee-ddcf03f85d6e.png)
 
 # Pancake Sort
 
@@ -25,3 +25,16 @@ Below, the maximum element can be seen in pink, and the first element in yellow.
 Next, all elements between the initial yellow and pink elements reverse, as seen below. After this, all elements within the unsorted array are flipped and the largest element (seen below in pink) is placed at the end of the unsorted array, joining the green sorted portion.
 
 ![image](https://user-images.githubusercontent.com/99101410/155628269-9a2e386a-87cc-4cf0-b064-4e2d8ddd4082.png)
+
+# Cocktail Sort
+
+Cocktail sort works like bubble sort, except in alternating directions. In the image below, array can be seen to be sorted at the front as well as the back.
+
+![image](https://user-images.githubusercontent.com/99101410/155902781-d91bc476-38a0-4e37-b1ef-e0373494e4fd.png)
+
+# Gnome Sort
+
+In gnome sort, adjacent elements are swapped if they are not sorted. If elements are swapped, the cursor (pink) moves one step backwards and repeats the process, moving forward when there is nothing to be swapped.
+
+![image](https://user-images.githubusercontent.com/99101410/155902847-18ef1882-bd70-431d-9013-400eb1183a20.png)
+
