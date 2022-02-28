@@ -38,3 +38,6 @@ In gnome sort, adjacent elements are swapped if they are not sorted. If elements
 
 ![image](https://user-images.githubusercontent.com/99101410/155902847-18ef1882-bd70-431d-9013-400eb1183a20.png)
 
+## Counting Sort
+
+In Counting Sort, a second array made of the cumulative frequencies of different elements is created and used to sort the array. This is the only sorting algorithm in this program that is not in-place.
