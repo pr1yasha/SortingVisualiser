@@ -12,7 +12,7 @@ In bubble sort, the cursor (pink) loops through the unsorted array, obtains the 
 
 In selection sort, the cursor (yellow) loops through the array, while a second cursor (blue) loops through the unsorted portion of the array and finds the smallest number (pink) before returning it to the end of the sorted part of the array.
 
-![image](https://user-images.githubusercontent.com/99101410/155901364-a92eb6f8-cce3-4941-bdee-ddcf03f85d6e.png)
+![image](https://user-images.githubusercontent.com/99101410/155906027-317cf14b-f6d3-4ea9-93b8-61b8a9b6a367.png)
 
 # Pancake Sort
 
