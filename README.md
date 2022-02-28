@@ -32,6 +32,10 @@ Cocktail sort works like bubble sort, except in alternating directions. In the i
 
 ![image](https://user-images.githubusercontent.com/99101410/155902781-d91bc476-38a0-4e37-b1ef-e0373494e4fd.png)
 
+## Insertion Sort
+
+
+
 ## Gnome Sort
 
 In gnome sort, adjacent elements are swapped if they are not sorted. If elements are swapped, the cursor (pink) moves one step backwards and repeats the process, moving forward when there is nothing to be swapped.
